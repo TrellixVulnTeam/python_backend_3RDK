@@ -1,0 +1,18 @@
+Docker Commands
+
+1. docker compose up -d
+2. docker compose ps
+3. docker-compose stop
+4. docker-compose down (Deletes Everything)
+5. docker exec -it pg_container psql -U postgres
+
+psql: Quick Reference Sheet
+\l list databases
+\c <database> connect to database
+\dt list tables
+\d <table> describe table
+\? list commands
+\q quit
+
+cat week1_script.sql | docker exec -i pg_container psql -d week1
+cat workshop.sql | docker exec -i pg_container psql -d week1
